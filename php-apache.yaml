@@ -1,0 +1,11 @@
+version: '3.08'
+services:
+  php-apache-enviroment:
+    container_name: php-apache
+    image: php:8.0-apache
+    volumes:
+      - ./php/src:/var/www/html/
+    Eports:
+      - 8000:80
+
+
